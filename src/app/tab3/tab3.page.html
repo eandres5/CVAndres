@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      EDAD
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<p>Fecha de nacimiento 18 de mayo de 1995</p>
+
+	<div style="text-align: right;width:280px">
+    <ion-button shape="round" (click) = "ageCalculator()" color="dark">Calcular</ion-button>
+    </div>
+	
+	<p *ngIf="age">Tienes {{showAge}} años</p>
+
+</ion-content>
